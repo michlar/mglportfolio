@@ -570,6 +570,142 @@
   }
   
   
+/***** PROJECT PAGES ******/
+
+
+/** Bachelor project **/
+
+/**** CASE PAGES ****/
+
+.case-page {
+    padding-top: clamp(40px, 8vh, 90px);
+    padding-bottom: clamp(60px, 12vh, 140px);
+  }
   
+  /* Hero */
+  .case-hero {
+    text-align: left;
+  }
+  
+  .case-title {
+    font-size: var(--fs-title);
+    line-height: 0.95;
+    margin: 0;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+  
+  .case-lede {
+    margin-top: 18px;
+    font-size: var(--fs-subtitle);
+    max-width: 32ch;
+    opacity: 0.8;
+  }
+  
+  .case-meta {
+    margin-top: 18px;
+    font-size: var(--fs-small);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    opacity: 0.7;
+  }
+  
+  .case-meta p {
+    margin: 4px 0;
+  }
+  
+  .case-cover {
+    margin-top: 40px;
+  }
+  
+  .case-cover img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Sections */
+  .case-section {
+    margin-top: clamp(60px, 10vh, 120px);
+    max-width: 60ch;
+  }
+  
+  .case-section h2 {
+    font-size: var(--fs-h2);
+    margin: 0 0 14px;
+  }
+  
+  .case-section p {
+    font-size: var(--fs-body);
+    margin: 0 0 18px;
+    line-height: 1.6;
+  }
+  
+  /* Image gallery */
+  .case-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 18px;
+  }
+  
+  .case-gallery img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+  }
+  
+  /* Reflection list */
+  .case-list {
+    padding-left: 18px;
+    font-size: var(--fs-body);
+  }
+  
+  .case-list li {
+    margin-bottom: 8px;
+  }
+  
+  /* Next project */
+  .case-next {
+    margin-top: clamp(80px, 12vh, 160px);
+  }
+  
+  .case-next a {
+    text-decoration: none;
+    font-size: var(--fs-h2);
+    color: inherit;
+    position: relative;
+  }
+  
+  .case-next a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #DAB900;
+    transition: width 180ms ease;
+  }
+  
+  .case-next a:hover::after {
+    width: 100%;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+  
+    .case-section {
+      max-width: 100%;
+    }
+  
+    .case-gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .case-meta {
+      text-align: left;
+    }
+  }
   
   
