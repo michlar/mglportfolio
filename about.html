@@ -15,18 +15,34 @@
     <a class="skip-link" href="#content">Skip to content</a>
 
     <header class="wrap">
-      <nav class="nav" aria-label="primary">
+      <nav class="nav nav-wrap" aria-label="primary">
+        <!-- Logo -->
         <a href="index.html" class="nav-home" aria-label="Home">
           <img src="images/honeycomb.png" alt="home logo" aria-hidden="true" />
         </a>
-        <a href="work.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
 
-        <div class="lang-switch">
-          <a href="/index.html" aria-current="true">EN</a>
-          <span>/</span>
-          <a href="/no/index.html">NO</a>
+        <!-- Hamburger button  -->
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <span class="hamburger"></span>
+        </button>
+
+        <!-- Menu links -->
+        <div id="nav-menu" class="nav-menu">
+          <a href="work.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+
+          <!-- Language switch -->
+          <div class="lang-switch">
+            <a href="/index.html" aria-current="true">EN</a>
+            <span>/</span>
+            <a href="/no/index.html">NO</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -84,6 +100,14 @@
               src="images/portrait.jpeg"
               alt="Portrait of Michelle G. Larsen"
             />
+               <a
+            href="assets/Resume_MGLarsen.pdf"
+            class="cv-link"
+            target="_blank"
+            rel="noopener"
+          >
+            View CV 
+          </a>
             <div class="about-skills">
               <p class="skills-title">— Skills</p>
               <ul class="skills-list">
@@ -102,5 +126,6 @@
         </div>
       </section>
     </main>
+    <script src="../js/script.js"></script>
   </body>
 </html>

@@ -15,30 +15,52 @@
     <a class="skip-link" href="#content">Skip to content</a>
 
     <header class="wrap">
-      <nav class="nav" aria-label="primary">
+      <nav class="nav nav-wrap" aria-label="primary">
+        <!-- Logo -->
         <a href="index.html" class="nav-home" aria-label="Home">
-          <img src="images/honeycomb.png" alt="home logo" aria-hidden="true" />
+          <img src="/images/honeycomb.png" alt="home logo" aria-hidden="true" />
         </a>
-        <a href="work.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
 
-        <div class="lang-switch">
-          <a href="/index.html" aria-current="true">EN</a>
-          <span>/</span>
-          <a href="/no/index.html">NO</a>
+        <!-- Hamburger button  -->
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <span class="hamburger"></span>
+        </button>
+
+        <!-- Menu links -->
+        <div id="nav-menu" class="nav-menu">
+          <a href="work.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+
+          <!-- Language switch -->
+          <div class="lang-switch">
+            <a href="/index.html" aria-current="true">EN</a>
+            <span>/</span>
+            <a href="/no/index.html">NO</a>
+          </div>
         </div>
       </nav>
     </header>
 
     <main id="content" class="wrap projects-page">
-      <h1 class="page-title">Selected work</h1>
+      <section class="projects-hero">
+        <h1 class="projects-title">Selected work</h1>
+        <p class="projects-lede">
+          A selection of UI-focused projects exploring interaction, visual
+          systems and user experience.
+        </p>
+      </section>
 
       <section class="projects-grid">
         <a href="/cases/bachelor.html" class="project-card">
           <div class="project-thumb">
             <img
-              id="bachelor-project"
+              class="project-logo"
               src="images/accenture.png"
               alt="Accenture logo"
             />
@@ -50,7 +72,10 @@
 
         <a href="/cases/rainydays.html" class="project-card">
           <div class="project-thumb">
-            <img src="images/RainyDays_Logo.png" alt="Rainydays logo" />
+            <img 
+              class="project-logo"
+              src="images/RainyDays_Logo.png" 
+              alt="Rainydays logo" />
           </div>
           <div class="project-info">
             <h2 class="project-title">Rainy Days</h2>
@@ -59,7 +84,10 @@
 
         <a href="/cases/osm.html" class="project-card">
           <div class="project-thumb">
-            <img src="images/osm_logo.png" alt="Oslo Science Museum logo" />
+            <img 
+            class="project-logo"
+            src="images/osm_logo.png" 
+            alt="Oslo Science Museum logo" />
           </div>
           <div class="project-info">
             <h2 class="project-title">Oslo Science Museum</h2>
@@ -69,7 +97,7 @@
         <a href="cases/plantbox.html" class="project-card">
           <div class="project-thumb">
             <img
-              src="images/plantbox.png"
+              src="images/pb-logo2.png"
               id="plantbox"
               alt="Screenshot of Plantbox"
             />
@@ -81,7 +109,10 @@
 
         <a href="case-2.html" class="project-card">
           <div class="project-thumb">
-            <img src="images/gyldnepizza.png" alt="Screenshot of project two" />
+            <img 
+            class="project-logo"
+            src="images/pizza.png" 
+            alt="Screenshot of project two" />
           </div>
           <div class="project-info">
             <h2 class="project-title">Den Gyldne Pizza</h2>
@@ -90,7 +121,10 @@
 
         <a href="cases/byaagames.html" class="project-card">
           <div class="project-thumb">
-            <img src="images/byaaa.png" alt="Screenshot of project two" />
+            <img 
+            class="project-logo"
+            src="images/ralingen-logo.png" 
+            alt="Screenshot of project two" />
           </div>
           <div class="project-info">
             <h2 class="project-title">Byåa - Rælingen Kommune</h2>
@@ -98,5 +132,6 @@
         </a>
       </section>
     </main>
+    <script src="../js/script.js"></script>
   </body>
 </html>
