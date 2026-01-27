@@ -24,3 +24,22 @@ navToggle.addEventListener('click', () => {
 navToggle.addEventListener('click', () => {
   console.log("clicked");
 });
+
+const bee = document.querySelector(".bee-wrap");
+
+function restartBee() {
+
+  bee.classList.remove("bee-animate");
+  
+  bee.style.transform = "translate(105vw, 110vh) rotate(0deg)";
+  
+  void bee.offsetWidth;
+
+  bee.classList.add("bee-animate");
+}
+
+bee.addEventListener("animationend", (e) => {
+  if (e.animationName === "beeFly") {
+    setTimeout(restartBee, 4000); 
+  }
+});
